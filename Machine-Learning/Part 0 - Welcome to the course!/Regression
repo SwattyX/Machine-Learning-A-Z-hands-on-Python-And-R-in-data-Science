@@ -1,0 +1,14 @@
+Simple Linear Regression
+We predict the value of one variable y based on another variable x
+y = b1x1 + b0
+
+
+Multiple Linear Regression
+We predict the value of one variable y based on multiple variable x
+y = b0 + b1 x1 + b2 x2 + b3 x3 + ... + bn xn
+
+
+
+Polynomial Regression
+Models the relationship between the independent variable x and the dependent variable y as an n degree polynomial of x (x^n)
+y = b0 + b1 x1 + b2 x1^2 + b3 x1^3 + ... + bn x1^n
