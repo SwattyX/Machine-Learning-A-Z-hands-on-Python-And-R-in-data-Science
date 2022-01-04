@@ -1,0 +1,61 @@
+regression
+when we have to predict a continuous real value like salary
+
+Classification
+when we have to predict a category or a class
+
+A Caveat
+Assumptions of a Linear Regression
+1. Linearity
+2. Homoscedasticity
+3. Multivariate Normality
+4. Independence of errors
+5. Lack of multicollinearity
+
+
+Statistical Significance
+The point where we get an uneasy feeling about the Null Hypothesis being true
+
+Since you are using sample data to make your inferences about the population, it’s possible you’ll make an error. In the case of the Null Hypothesis, we can make one of two errors.
+Type 1, or alpha error: An alpha error is when you mistakenly reject the Null and believe that something significant happened. In other words, you believe that the means of the two populations are different when they aren’t.
+Type 2, or beta error: A beta error is when you fail to reject the null when you should have.  In this case, you missed something significant and failed to take action. 
+
+5 Methods of building models:
+1. All-in                          _
+2. Backward Elimination             |
+3. Forward Selection                |   Stepwise Regression
+4. Bidirectional Elimination       _|
+5. Score Comparison                 
+
+1. All-in
+    Prior knowledge; or
+    You have to; or
+    Preparing for Backward Elimination
+
+2. Backward Elimination
+    2.1 Select a significance level to stay in the model (e.g. SL = 0.05)
+    2.2 Fit the full model with all possible predictors
+    2.3 Consider the predictor with the highest P-value. If P > SL, go to STEP 4, otherwise got to FIN
+    2.4 Remove the predictor
+    2.5 Fit the model without this variale
+    Return to STEP 2.3 until I don't have any predictor with a P > SL
+
+3. Forward Selection
+    3.1 Select a significance level to stay in the model (e.g. SL = 0.05)
+    3.2 Fit all simple regression models y ~ xn. Select the one with the lowest P-value
+    3.3 Keep this variable and fit all possible models with one extra predictor added to the one(s) you already have
+    3.4 Consider the predictor with the lowest P-value. if P < SL, go to STEP 3, otherwise go to FIN
+
+
+4. Bidirectional Elimination
+    4.1 Select a significance level to enter and to stay in the model. SLENTER = 0.05. SLSTAY = 0.05
+    4.2 Perform the next step of Forward Selection (new variables must be P < SLENTER to enter)
+    4.3 Perform ALL steps of Backward Elimination (old variables must have P < SLSTAY to stay)
+    Move back to step 4.2
+    4.4 No new variables can enter and no old variable can exit
+
+5. All Possible Models
+    5.1 Select a criterion of goodness of fit (e.g. Akaike Criterion)
+    5.2 Construct All Possible Regression Models: 2^(N-1) total combinations
+    5.3 Select the one with the best criterion
+    Fin
