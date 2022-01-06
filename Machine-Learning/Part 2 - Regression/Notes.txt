@@ -59,3 +59,43 @@ Type 2, or beta error: A beta error is when you fail to reject the null when you
     5.2 Construct All Possible Regression Models: 2^(N-1) total combinations
     5.3 Select the one with the best criterion
     Fin
+
+
+
+Support Vector Regression
+    - Epsilon Insensitive Tube
+    - Slack Variables (Potential Support Vector)
+
+Heads-up about Non-Linear SVR
+    Section on SVM
+        - SVM Intuition
+    
+    Section on Kernel SVM
+        - Kernel SVM Intuition
+        - Mapping to a higher dimension
+        - The Kernel Trick
+        - Types of Kernel Functions
+        - Non-Linear Kernel SVR
+
+We don't need feature scaling where our model already has coeficients
+SVR there is not this explicit equation of the dependent variable with respect to the features.
+There are not those coefficients multiplying each of the features and therefore not compensating
+with lower values for the features taking high values.
+
+
+Applying Feature Scalling
+    You don't apply features Scalling to some dummy variables resulting from one hot encoding.
+
+    You know that when a dependent variable takes binary values like zero and one you don't have 
+    to apply Feature Scalling for just getting either because the values are already in the right range.
+
+    You also know that when the dependent variable takes superhigh values with respect to the other features,
+    then you have to apply features, going to put all the features and the dependent variable in the same range.
+
+    And finally, you also know that whenever you want to split your dataset into the training set and it's 
+    set, well, you have to apply feature scaling after the split.
+
+
+
+
+
