@@ -82,7 +82,6 @@ SVR there is not this explicit equation of the dependent variable with respect t
 There are not those coefficients multiplying each of the features and therefore not compensating
 with lower values for the features taking high values.
 
-
 Applying Feature Scalling
     You don't apply features Scalling to some dummy variables resulting from one hot encoding.
 
@@ -98,4 +97,21 @@ Applying Feature Scalling
 
 
 
+Decision Tree Regression
+It's not the best model to use in a single feature dataset. It's more adapted to dataset with many features, high dimention datasets.
 
+
+Apply OneHotEncoding when there is no order relationship in the categorical variables
+Apply LabelEncoding when there IS a order relationship in the categorical variables
+
+
+Random Forest Regression is a version of ensemble learning
+
+R Squared:
+R Squared tells us how good is our line compared to the average line (ss.res vs ss.tot, where ss.res is our line and ss.tot is the average line)
+
+R^2 = 1 - (ss.res / ss.total)
+The closes is to 1, the better.
+We try to minimize the SS.res
+
+The better parameter to measure goodness of fit is Adjustes R^2
