@@ -111,7 +111,8 @@ R Squared:
 R Squared tells us how good is our line compared to the average line (ss.res vs ss.tot, where ss.res is our line and ss.tot is the average line)
 
 R^2 = 1 - (ss.res / ss.total)
-The closes is to 1, the better.
+The closest it is to 1, the better.
 We try to minimize the SS.res
 
-The better parameter to measure goodness of fit is Adjustes R^2
+The better parameter to measure goodness of fit is Adjusted R^2
+
