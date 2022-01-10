@@ -1,0 +1,5 @@
+Logistic Regression
+
+Feature Scaling improve the training performance
+
+Score: n of correct predictions / n of observations
