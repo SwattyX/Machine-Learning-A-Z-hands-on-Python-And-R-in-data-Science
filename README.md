@@ -1,3 +1,3 @@
-# Machine-Learning-A-Z-hands-on-Python-And-R-in-data-Science
+# Machine Learning on Python Course
 
 My course notes.
